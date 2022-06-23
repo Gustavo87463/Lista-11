@@ -1,0 +1,43 @@
+insert into departamento(codDepto,nome,gerente,dataGerente)
+values (2,'Financeiro',3,'2022-06-23');
+insert into departamento(codDepto,nome,gerente,dataGerente)
+values (3,'Ensino',5,'2022-06-23');
+
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('11','Fanya Crannell','1995-05-28','4204 Continental Court','F',10000,6,2);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('12','Nonna Janning','1995-12-17','212 Oakridge Terrace','M',40000,6,3);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('13','Nata Gehrels','1997-06-03','502 International Junction','F',10000,6,2);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('14','Welby Purkess','2000-10-30','077 Hooker Way','M',30000,3,3);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('15','Fionnula King','1996-04-07','1189 Dorton Point','M',30000,4,2);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('16','Cort Miller','2000-09-15','07327 Jackson Parkway','M',40000,3,3);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('17','Betti Asser','1995-09-15','9 Johnson Hill','F',50000,7,2);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values ('18','Babbette Birkett','1998-07-23','3893 Moulton Center','M',50000,7,3);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values (19,'Roslyn Lowde','1996-03-17','58 Almo Lane','M',30000,6,2);
+insert into empregado(codEmp,nome,dataNasc,endereco,sexo,salario,codSuperv,codDepto)
+values (20,'Martin Matczak','1999-05-25','137 Monterey Center','M',30000,5,3);
+
+update empregado
+set endereco = '212 Oakridge Bridge'
+where codEmp = 12;
+update empregado
+set endereco = '1996-10-26', nome = Martin McFly
+where codEmp = 20;
+update empregado
+set salario = 25000
+where codSuperv = 6 and codDepto = 2;
+
+
+
+
+
+
+
+
